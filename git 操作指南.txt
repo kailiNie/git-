@@ -13,7 +13,8 @@ git add .
 git commit -m "注释"
 
 6.查看状态 
+
 git status 
 
-7.提交
+7.提交 12
 git push -u origin master
