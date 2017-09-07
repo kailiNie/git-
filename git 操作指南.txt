@@ -18,3 +18,14 @@ git status
 
 7.提交 12
 git push -u origin master
+
+
+Mac 打开ssh
+cd ~/.ssh
+open .
+
+
+
+//Mac 看不到git 文件 
+在终端 defaults write com.apple.finder AppleShowAllFiles TRUE 
+在输入 killall Finder
