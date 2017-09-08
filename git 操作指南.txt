@@ -17,3 +17,9 @@ git status
 
 7.提交
 git push -u origin master
+
+
+8.克隆本地 //后面是git地址
+git clone https://github.com/kailiNie/git-.git 
+
+
