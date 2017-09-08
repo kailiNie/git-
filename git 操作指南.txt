@@ -13,13 +13,37 @@ git add .
 git commit -m "注释"
 
 6.查看状态 
-git status 
 
+git status 
+ 
 7.提交
 git push -u origin master
 
 
 8.克隆本地 //后面是git地址
 git clone https://github.com/kailiNie/git-.git 
+ 
+
+Mac 打开ssh
+cd ~/.ssh
+open .
 
 
+
+//Mac 看不到git 文件 
+在终端 defaults write com.apple.finder AppleShowAllFiles TRUE 
+在输入 killall Finder
+
+
+//当git使用http clone时候  在push时候每一次都提示输入username／password 
+解决:找到git文件夹下的config文件 修改
+修改前
+
+    [remote "origin"]
+    url = https://github.com/kailiNie/git-.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+修改后
+
+    [remote "origin"]
+    url = git@github.com:kailiNie/git-.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
